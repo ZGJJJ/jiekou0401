@@ -1,6 +1,6 @@
 import psycopg2
 from psycopg2 import pool
-from ..config.settings import DB_CONFIG
+from config.settings import DB_CONFIG
 
 # PostgreSQL连接池
 pg_pool = psycopg2.pool.SimpleConnectionPool(
