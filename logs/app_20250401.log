@@ -1,0 +1,25 @@
+[2025-04-01 10:39:40,109] ERROR in __init__: Failed to create synchronous database pool: psycopg2.pool.SimpleConnectionPool() got multiple values for keyword argument 'minconn'
+[2025-04-01 10:40:48,676] ERROR in __init__: Failed to create synchronous database pool: psycopg2.pool.SimpleConnectionPool() got multiple values for keyword argument 'minconn'
+[2025-04-01 10:45:42,089] INFO in __init__: Synchronous database pool created successfully
+[2025-04-01 10:45:42,103] INFO in __init__: Synchronous database pool created successfully
+[2025-04-01 10:45:42,103] INFO in __init__: Synchronous database pool created successfully
+[2025-04-01 10:45:42,173] INFO in __init__: Asynchronous database pool created successfully
+[2025-04-01 10:45:42,173] INFO in __init__: Asynchronous database pool created successfully
+[2025-04-01 10:45:42,175] INFO in __init__: Starting server...
+[2025-04-01 10:45:42,175] INFO in __init__: Starting server...
+[2025-04-01 10:48:25,428] INFO in __init__: Synchronous database pool created successfully
+[2025-04-01 10:48:25,442] INFO in __init__: Synchronous database pool created successfully
+[2025-04-01 10:48:25,442] INFO in __init__: Synchronous database pool created successfully
+[2025-04-01 10:48:25,476] INFO in __init__: 异步数据库连接池创建成功
+[2025-04-01 10:48:25,476] INFO in __init__: 异步数据库连接池创建成功
+[2025-04-01 10:48:25,485] INFO in __init__: 服务器启动中...
+[2025-04-01 10:48:25,485] INFO in __init__: 服务器启动中...
+[2025-04-01 10:50:56,952] INFO in __init__: Synchronous database pool created successfully
+[2025-04-01 10:50:56,968] INFO in __init__: Synchronous database pool created successfully
+[2025-04-01 10:50:56,968] INFO in __init__: Synchronous database pool created successfully
+[2025-04-01 10:50:57,001] INFO in __init__: 异步数据库连接池创建成功
+[2025-04-01 10:50:57,001] INFO in __init__: 异步数据库连接池创建成功
+[2025-04-01 10:50:57,002] INFO in __init__: 服务器启动中...
+[2025-04-01 10:50:57,002] INFO in __init__: 服务器启动中...
+[2025-04-01 11:09:39,278] INFO in __init__: 数据库连接池创建成功
+[2025-04-01 11:10:58,357] INFO in __init__: 数据库连接池创建成功

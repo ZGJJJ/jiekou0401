@@ -1,0 +1,141 @@
+[2025-04-01 10:45:42 +0800] [32788] [INFO] Running on http://0.0.0.0:5000 (CTRL + C to quit)
+[2025-04-01 10:46:03 +0800] [32788] [ERROR] Error in ASGI Framework
+Traceback (most recent call last):
+  File "E:\python\Lib\site-packages\quart\app.py", line 1498, in full_dispatch_request
+    result = await self.preprocess_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\quart\app.py", line 1545, in preprocess_request
+    result = await self.ensure_async(function)()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonxx\jiekou\jiekou\__init__.py", line 105, in before_request
+    logger.info(f"Request: {request.method} {request.url}")
+                            ^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\werkzeug\local.py", line 318, in __get__
+    obj = instance._get_current_object()
+  File "E:\python\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\Lib\site-packages\quart\app.py", line 1464, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\quart\app.py", line 1502, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "E:\python\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "E:\python\Lib\site-packages\flask_cors\extension.py", line 188, in cors_after_request
+    if resp.headers is not None and resp.headers.get(ACL_ORIGIN):
+       ^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'headers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\Lib\site-packages\hypercorn\asyncio\task_group.py", line 27, in _handle
+    await app(scope, receive, send, sync_spawn, call_soon)
+  File "E:\python\Lib\site-packages\hypercorn\app_wrappers.py", line 34, in __call__
+    await self.app(scope, receive, send)
+  File "E:\python\Lib\site-packages\quart\app.py", line 1735, in __call__
+    await self.asgi_app(scope, receive, send)
+  File "E:\python\Lib\site-packages\quart\app.py", line 1761, in asgi_app
+    await asgi_handler(receive, send)
+  File "E:\python\Lib\site-packages\quart\asgi.py", line 60, in __call__
+    raise_task_exceptions(done)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\python\Lib\site-packages\quart\utils.py", line 186, in raise_task_exceptions
+    raise task.exception()
+  File "E:\python\Lib\site-packages\quart\asgi.py", line 110, in handle_request
+    response = await _handle_exception(self.app, error)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\quart\asgi.py", line 408, in _handle_exception
+    raise error
+  File "E:\python\Lib\site-packages\quart\asgi.py", line 108, in handle_request
+    response = await self.app.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\quart\app.py", line 1468, in handle_request
+    return await self.handle_exception(error)
+                 ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "E:\python\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "E:\python\Lib\site-packages\flask_cors\extension.py", line 188, in cors_after_request
+    if resp.headers is not None and resp.headers.get(ACL_ORIGIN):
+       ^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'headers'
+[2025-04-01 10:46:07 +0800] [32788] [ERROR] Error in ASGI Framework
+Traceback (most recent call last):
+  File "E:\python\Lib\site-packages\quart\app.py", line 1498, in full_dispatch_request
+    result = await self.preprocess_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\quart\app.py", line 1545, in preprocess_request
+    result = await self.ensure_async(function)()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonxx\jiekou\jiekou\__init__.py", line 105, in before_request
+    logger.info(f"Request: {request.method} {request.url}")
+                            ^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\werkzeug\local.py", line 318, in __get__
+    obj = instance._get_current_object()
+  File "E:\python\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\Lib\site-packages\quart\app.py", line 1464, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\quart\app.py", line 1502, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "E:\python\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "E:\python\Lib\site-packages\flask_cors\extension.py", line 188, in cors_after_request
+    if resp.headers is not None and resp.headers.get(ACL_ORIGIN):
+       ^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'headers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\python\Lib\site-packages\hypercorn\asyncio\task_group.py", line 27, in _handle
+    await app(scope, receive, send, sync_spawn, call_soon)
+  File "E:\python\Lib\site-packages\hypercorn\app_wrappers.py", line 34, in __call__
+    await self.app(scope, receive, send)
+  File "E:\python\Lib\site-packages\quart\app.py", line 1735, in __call__
+    await self.asgi_app(scope, receive, send)
+  File "E:\python\Lib\site-packages\quart\app.py", line 1761, in asgi_app
+    await asgi_handler(receive, send)
+  File "E:\python\Lib\site-packages\quart\asgi.py", line 60, in __call__
+    raise_task_exceptions(done)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\python\Lib\site-packages\quart\utils.py", line 186, in raise_task_exceptions
+    raise task.exception()
+  File "E:\python\Lib\site-packages\quart\asgi.py", line 110, in handle_request
+    response = await _handle_exception(self.app, error)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\quart\asgi.py", line 408, in _handle_exception
+    raise error
+  File "E:\python\Lib\site-packages\quart\asgi.py", line 108, in handle_request
+    response = await self.app.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\python\Lib\site-packages\quart\app.py", line 1468, in handle_request
+    return await self.handle_exception(error)
+                 ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "E:\python\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "E:\python\Lib\site-packages\flask_cors\extension.py", line 188, in cors_after_request
+    if resp.headers is not None and resp.headers.get(ACL_ORIGIN):
+       ^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'headers'
