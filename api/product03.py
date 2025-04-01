@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from ..core.database import pg_pool
+from core.database import pg_pool
 import time
 import hashlib
 import requests

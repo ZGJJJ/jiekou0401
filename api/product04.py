@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from ..core.database import pg_pool
+from core.database import pg_pool
 
 #产品4 建筑领域启信分
 
